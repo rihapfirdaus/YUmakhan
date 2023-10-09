@@ -1,0 +1,208 @@
+* {
+  font-family: cursive;
+}
+button {
+  cursor: pointer;
+}
+body {
+  background-image: url(../img/background.png);
+}
+header {
+  background-color: rgba(221, 221, 221, 0.8);
+  height: 500px;
+  border-radius: 50px;
+  text-align: center;
+  font-size: xx-large;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+nav {
+  text-align: center;
+  margin: 20px 0px;
+  background-color: rgba(221, 221, 221, 0.8);
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 10px;
+}
+nav a {
+  padding: 5px 10px;
+  font-size: x-large;
+  border-radius: 30px;
+  margin: 5px;
+  background-color: rgba(128, 128, 128, 0.8);
+  text-decoration: none;
+  color: black;
+}
+nav i:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.menu {
+  float: left;
+  width: 70%;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 5px;
+}
+.content {
+  display: flex;
+  padding: 0 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.content::-webkit-scrollbar {
+  width: 0;
+}
+.card {
+  background-color: rgba(128, 128, 128, 0.8);
+  min-width: 250px;
+  height: 300px;
+  border-radius: 0 30px 0 30px;
+  margin: 10px;
+  padding: 5px;
+  cursor: default;
+}
+.card img {
+  height: 40%;
+  border-radius: 0 30px 0 30px;
+  float: left;
+}
+.card h3 {
+  text-indent: 2em;
+  border-bottom: 2px solid black;
+  width: 90%;
+}
+.card ul {
+  font-size: small;
+  margin-top: -10px;
+}
+.card .price {
+  float: right;
+}
+.card .price p {
+  line-height: 5px;
+}
+.card .price h2 {
+  font-size: xx-large;
+}
+.card .price h2 span {
+  font-size: small;
+}
+.card button {
+  float: right;
+  cursor: pointer;
+}
+.card:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  animation: ease-in 2s all;
+}
+.shadow {
+  box-shadow: 3px 9px 38px -1px rgba(0, 0, 0, 0.67);
+  -webkit-box-shadow: 3px 9px 38px -1px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: 3px 9px 38px -1px rgba(0, 0, 0, 0.67);
+}
+aside {
+  border: 2px solid black;
+  float: right;
+  width: 25%;
+  border-radius: 15px;
+  margin-top: 5px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgba(221, 221, 221, 0.8);
+}
+aside h2 {
+  margin: 10px;
+  border-bottom: 2px solid black;
+}
+.cart .table {
+  height: 300px;
+  border: 2px solid rgba(70, 70, 70, 0.8);
+  overflow-y: auto;
+}
+.cart .pay {
+  float: right;
+  padding: 7px;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid rgb(221, 221, 221);
+}
+
+th,
+td {
+  text-align: center;
+  padding: 16px;
+}
+
+th {
+  background-color: rgba(128, 128, 128, 0.8);
+}
+
+.profile {
+  text-align: center;
+}
+.profile span {
+  font-weight: bold;
+}
+.profile img {
+  max-width: 200px;
+  border-radius: 100%;
+}
+.profile a {
+  background-color: rgba(128, 128, 128, 0.8);
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+footer {
+  margin-top: 10px;
+  width: 100%;
+  display: inline-block;
+  border: 2px solid black;
+  background-color: rgba(221, 221, 221, 0.8);
+  border-radius: 15px;
+  text-align: center;
+  line-height: 1em;
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    font-size: large;
+    height: auto;
+  }
+  nav a {
+    font-size: small;
+  }
+  nav i:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  .menu {
+    margin: 0 auto;
+    float: none;
+    width: 90%;
+  }
+  .card:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  .cart .pay {
+    float: none;
+  }
+  aside {
+    margin: 10px auto;
+    float: none;
+    width: 90%;
+  }
+  footer {
+    font-size: small;
+  }
+}
